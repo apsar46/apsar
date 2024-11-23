@@ -1,0 +1,37 @@
+package org.newselenium;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignmaent {
+	public static void main(String[] args){
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\kajamohammed apsar S\\eclipse-workspace\\Selenium\\chrome driver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.fitpeo.com/");
+		WebElement calender =driver.findElement(By.className("Revenue Calculator"));
+		calender.click();
+		WebElement values=driver.findElement(By.id(":rf:"));
+		  values.sendKeys("820");
+		  WebElement revalues=driver.findElement(By.id(":rf:"));
+		  revalues.sendKeys("560");
+		  WebElement set1= driver.findElement(By.xpath("//input[@class='PrivateSwitchBase-input css-1m9pwf3']"));
+		  set1.click();
+		
+		  WebElement set3= driver.findElement(By.xpath("//span[@class='MuiTouchRipple-root css-w0pj6f']"));
+		  set3.click();
+		  WebElement set4= driver.findElement(By.xpath("//svg[@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv']"));
+		  set4.click();
+		  WebElement set5= driver.findElement(By.xpath("//span[@class='MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1sp9p8c']"));
+		  set5.click();
+		  
+		  
+		  
+		  
+		
+	}
+
+}
